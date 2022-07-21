@@ -16,7 +16,29 @@ but hopefully that can change in the near future, and this dream can become a re
 
 </body>
 	
-<script type="text/javascript">!function(e,t,n,o,a,c){window.WebConnect={},(a=t.createElement(n)).src="https://smart-button.goboomtown.com/js/smartButtonConnectjs",(c=t.getElementsByTagName(n)[0]).parentNode.insertBefore(a,c)}(window,document,"script"),window.onload=function(){WebConnect.configOptions({integrationId:"KQS74U",partnerToken:"36ACF647AEC089AC8B8B",partnerTeam:"KTE-X6N",apiHost:"https://api.goboomtown.com",frameSource:"https://webchat.goboomtown.com"})};</script>
+<script>
+   ; (function () {
+     window.BTSmartButton = window.BTSmartButton || {}
+     window.BTSmartButton.config = {
+       integrationId: 'KQS74U',
+       partnerToken: '36ACF647AEC089AC8B8B',
+       partnerTeam: 'KTE-X6N',
+     }
+     var loadSmartButtonConnect = function () {
+       var script = document.createElement('script')
+       script.type = 'text/javascript'
+       script.async = true
+       script.src = 'https://smart-button.goboomtown.com/js/smartButtonConnect.js'
+       var existingScript = document.getElementsByTagName('script')[0]
+       existingScript.parentNode.insertBefore(script, existingScript)
+     }
+     document.addEventListener(
+       'DOMContentLoaded',
+       loadSmartButtonConnect,
+       false,
+     )
+   })()
+ </script>
 	
 </html>
 	
