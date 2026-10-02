@@ -1,0 +1,8 @@
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+.env*.local
+# Runtime data written by the local demo (seeded from data/*.seed.json)
+.data/
